@@ -1,0 +1,26 @@
+{
+    "name": "buntest",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-20",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "forwardPorts": [
+        3000
+    ],
+    "postCreateCommand": "npm install -g bun",
+    // "postStartCommand": "bun dev",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "biomejs.biome",
+                "Codeium.codeium",
+                "eamodio.gitlens",
+                "editorconfig.editorconfig",
+                "github.vscode-github-actions",
+                "GitHub.vscode-pull-request-github",
+                "ms-azuretools.vscode-docker",
+                "MS-vsliveshare.vsliveshare"
+            ]
+        }
+    }
+}
